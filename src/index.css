@@ -2,41 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* ResQ App Design System - Domestic Violence Support App
+Dark theme with teal accents for security and discretion
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Main gradient background colors */
+    --bg-gradient-start: 188 100% 11%; /* Deep Teal Green #00383E */
+    --bg-gradient-end: 210 13% 7%; /* Charcoal Black #0C0F12 */
+    
+    /* App background and surfaces */
+    --background: 210 13% 7%; /* Charcoal Black */
+    --foreground: 0 0% 100%; /* White text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card backgrounds */
+    --card: 0 0% 11%; /* Very Dark Gray #1C1C1C */
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary button (SOS, Start Scan) */
+    --primary: 170 72% 45%; /* Aqua Green #1CC6AE */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary/danger button */
+    --secondary: 356 55% 49%; /* Red/Maroon #BF3B42 */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted text and inputs */
+    --muted: 0 0% 11%;
+    --muted-foreground: 0 0% 69%; /* #B0B0B0 */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors */
+    --accent: 170 72% 45%; /* Teal accent */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors */
+    --destructive: 0 84% 60%; /* Critical red */
+    --destructive-foreground: 0 0% 100%;
+    
+    --warning: 46 100% 56%; /* Yellow warning */
+    --success: 120 83% 53%; /* Green safe */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs */
+    --border: 0 0% 18%;
+    --input: 0 0% 11%;
+    --ring: 170 72% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* Text variations */
+    --text-heading: 0 0% 100%; /* White headings */
+    --text-body: 0 0% 69%; /* Gray body text #B0B0B0 */
+    --text-label: 0 0% 48%; /* Label text #7A7A7A */
+    
+    /* Navigation */
+    --nav-bg: 0 0% 0%; /* Almost black navigation */
+    --nav-active: 170 72% 45%; /* Teal active */
+    --nav-inactive: 0 0% 47%; /* Gray inactive */
+    
+    /* Gradients */
+    --gradient-main: linear-gradient(180deg, hsl(var(--bg-gradient-start)), hsl(var(--bg-gradient-end)));
+    --gradient-button: linear-gradient(135deg, hsl(var(--primary)), hsl(170 72% 55%));
+    
+    /* Shadows and glows */
+    --shadow-primary: 0 4px 20px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 4px 12px hsl(0 0% 0% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 

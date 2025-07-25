@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// ResQ App specific colors
+				warning: 'hsl(var(--warning))',
+				success: 'hsl(var(--success))',
+				'text-heading': 'hsl(var(--text-heading))',
+				'text-body': 'hsl(var(--text-body))',
+				'text-label': 'hsl(var(--text-label))',
+				'nav-bg': 'hsl(var(--nav-bg))',
+				'nav-active': 'hsl(var(--nav-active))',
+				'nav-inactive': 'hsl(var(--nav-inactive))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -63,10 +72,21 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			backgroundImage: {
+				'gradient-main': 'var(--gradient-main)',
+				'gradient-button': 'var(--gradient-button)',
+			},
+			boxShadow: {
+				'primary': 'var(--shadow-primary)',
+				'card': 'var(--shadow-card)',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
 			},
 			keyframes: {
 				'accordion-down': {
